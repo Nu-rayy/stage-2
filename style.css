@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gill Sans';
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.logo::selection{
+    color: white;
+    background-color: #217469;
+}
+
+#text::selection{
+    color: #217469;
+    background-color: white;
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 2em;
+    margin-right: 100px;
+    color: #217469;
+    pointer-events:none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #217469;
+    margin: 0px 10px;
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: ease .3s all;
+}
+
+.navbar a:hover, .navbar a.active{
+    background-color: #217469;
+    color: white;
+}
+
+.parrallex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.parrallex img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parrallex #text{
+    position: absolute;
+    color: white;
+    font-size: 6em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.content{
+    position: relative;
+    background-color: #003329;
+    padding: 100px;
+}
+
+.content h2{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.content p{
+    color: white;
+    font-weight: 200;
+}
